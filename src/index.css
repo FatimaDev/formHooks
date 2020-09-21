@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #264653;
+
+}
+form {
+  background-color:antiquewhite;
+  height: 450px;
+  width: 400px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+
+}
+form input{
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  background: #fff;
+  color: #264653;
+  border: 2px solid #264653
+
+}
+ button{
+  background:antiquewhite ;
+  border: 3px solid #264653;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: #264653;font-size: 15px;
+}
+button:hover{
+  background: #264653;color: #fff;cursor: pointer;border:3px solid #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.student-name{
+  color: #fff;
+  width: 400px;
+  padding:10px;
+  background: antiquewhite;
+  border: 2px solid #264653;
+  color: #264653;
+  border-radius: 5px;position: relative;
+}
+.student-name:before{
+  content: "\f1f8";
+  position: absolute;width: 100%;height: 100%;color: #264653;top: 0;left: 0;display: flex;justify-content: center;
+  align-items: center ;font-family: "Font Awesome 5 Free";font-size: 20px;opacity: 0;transition: all 0.5s linear;
+  cursor: pointer;
+
+}
+.student-name:hover:before{
+  opacity: 1;
 }
